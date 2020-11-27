@@ -48,6 +48,10 @@ export default new VueRouter({
         {
           path: '/page4',
           component: () => import('../views/demo/page4.vue')
+        },
+        {
+          path: '/shopping',
+          component: () => import('../views/demo/shopping.vue')
         }
       ]
     },
