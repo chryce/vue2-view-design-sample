@@ -126,7 +126,6 @@ export default {
 }
 
 
-
 .menu-item span {
   display: inline-block;
   overflow: hidden;
