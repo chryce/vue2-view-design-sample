@@ -1,11 +1,11 @@
 <template>
   <div class="layout">
     <Layout :style="{minHeight: '99vh'}">
-      <Sider ref="side1"  hide-trigger collapsible :collapsed-width="80" v-model="isCollapsed">
+      <Sider ref="side1" hide-trigger collapsible :collapsed-width="80" v-model="isCollapsed">
         <Menu theme="light" active-name="" width="auto" :class="menuitemClasses">
           <Submenu name="1">
             <template slot="title">
-              <Icon type="ios-navigate"></Icon>
+              <Icon type="ios-paper"/>
               <span>知识点</span>
             </template>
             <MenuItem name="1-1" @click.native="handleUrl('/page0')">
@@ -36,7 +36,6 @@
               <Icon type="ios-settings"></Icon>
               <span>父子3-3</span>
             </MenuItem>
-
             <MenuItem name="1-8" @click.native="handleUrl('/page4')">
               <Icon type="ios-settings"></Icon>
               <span>自定义插件</span>
@@ -125,6 +124,8 @@ export default {
 .rotate-icon {
   transform: rotate(-90deg);
 }
+
+
 
 .menu-item span {
   display: inline-block;
