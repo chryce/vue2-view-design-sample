@@ -12,7 +12,7 @@ export default {
   components: { child31 },
   methods: {
     fatherMethod () {
-      console.log('测试3-1')
+      alert("page3_1.fatherMethod()")
     }
   }
 }

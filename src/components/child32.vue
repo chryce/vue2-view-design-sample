@@ -1,14 +1,14 @@
 <template>
-    <div>
-        <Button type="primary" @click.native="childMethod">点击</Button>
-    </div>
+  <div>
+    <Button type="primary" @click.native="childMethod">点击</Button>
+  </div>
 </template>
 
 <script>
 export default {
   name: 'child32',
   methods: {
-    childMethod () {
+    childMethod() {
       this.$emit('fatherMethodx')
     }
   }

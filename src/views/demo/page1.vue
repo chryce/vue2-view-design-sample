@@ -1,9 +1,21 @@
 <template>
+  <div>
+
     <ul id="example-1">
-        <li v-for="item in items" :key="item.message">
-            {{ item.message }}
-        </li>
+      <li v-for="item in items" :key="item.message">
+        {{ item.message }}
+      </li>
     </ul>
+
+    <fieldset>
+      <legend>List-ListItem</legend>
+      <List>
+        <ListItem v-for="item in items" :key="item.message">
+          {{ item.message }}
+        </ListItem>
+      </List>
+    </fieldset>
+  </div>
 </template>
 
 <script>
@@ -12,8 +24,8 @@ export default {
   data: function () {
     return {
       items: [
-        { message: 'Page1----A' },
-        { message: 'Page1----B' }
+        {message: '西游记'},
+        {message: '水浒传'}
       ]
     }
   }
